@@ -28,10 +28,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J      &kp L            &kp U              &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N            &kp E              &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K      &kp H            &kp COMMA          &kp DOT  &kp FSLH       &kp ESC
-                         &kp LGUI  &mo 1  &kp ENTER    &kp SPACE  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL
+&kp TAB    &kp Q  &kp W  &kp F       &kp P  &kp B             &kp J      &kp L      &kp U              &kp Y    &kp SEMICOLON  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S       &kp T  &kp G             &kp M      &kp N      &kp E              &kp I    &kp O          &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C       &kp D  &kp V             &kp K      &kp H      &kp COMMA          &kp DOT  &kp FSLH       &kp ESC
+                         &lt 2 LWIN  &mo 1  &kp LEFT_SHIFT    &kp ENTER  &kp SPACE  &kp RIGHT_CONTROL
             >;
         };
 
@@ -41,6 +41,15 @@
 &kp BACKSPACE  &kp BACKSPACE  &trans  &trans  &trans  &trans    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp RET  &trans
 &kp LCTRL      &kp LCTRL      &trans  &trans  &trans  &trans    &trans     &kp N1  &kp N2  &kp N3  &kp DOT  &trans
                                       &trans  &trans  &trans    &trans     &trans  &kp N0
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&kp F1  &kp F1        &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &kp LS(EXCL)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
