@@ -13,7 +13,12 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 11>;
+            key-positions = <0 10>;
+        };
+
+        Gaming_layer {
+            bindings = <&tog 2>;
+            key-positions = <10 6 34 30>;
         };
     };
 
@@ -28,10 +33,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F       &kp P  &kp B             &kp J      &kp L      &kp U              &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S       &kp T  &kp G             &kp M      &kp N      &kp E              &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C       &kp D  &kp V             &kp K      &kp H      &kp COMMA          &kp DOT  &kp FSLH       &kp ESC
-                         &lt 2 LWIN  &mo 1  &kp LEFT_SHIFT    &kp ENTER  &kp SPACE  &kp RIGHT_CONTROL
+&none  &kp Q  &kp W  &kp F       &kp P  &kp B             &kp J      &kp L      &kp U              &kp Y    &kp SEMICOLON  &none
+&none  &kp A  &kp R  &kp S       &kp T  &kp G             &kp M      &kp N      &kp E              &kp I    &kp O          &none
+&none  &kp Z  &kp X  &kp C       &kp D  &kp V             &kp K      &kp H      &kp COMMA          &kp DOT  &kp FSLH       &none
+                     &lt 2 LWIN  &mo 1  &kp LEFT_SHIFT    &kp ENTER  &kp SPACE  &kp RIGHT_CONTROL
             >;
         };
 
@@ -50,6 +55,15 @@
 &trans  &kp LS(EXCL)  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                               &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&none  &kp Q      &none         &kp W         &kp E         &kp NUMBER_6    &none  &none  &none  &none  &none  &none
+&none  &kp LCTRL  &kp A         &kp S         &kp D         &kp N5          &none  &none  &none  &none  &none  &none
+&none  &kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &none  &none  &none  &none  &none  &none
+                                &none         &kp N7        &kp SPACE       &none  &none  &none
             >;
         };
     };
