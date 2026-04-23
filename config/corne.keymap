@@ -55,18 +55,18 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // |  ---  |     Q      |     W      |     E       |      R      |  T  |   |  Y  |      U      |      I      |      O     |      P      |  ---  |
+            // |  ---  | GUI(A)     | ALT(S)     | SHFT(D)     | CTRL(F)     |  G  |   |  H  | CTRL(J)     | SHFT(K)     | ALT(L)     | GUI(;)      |  ---  |
+            // |  ---  |     Z      |     X      |     C       |      V      |  B  |   |  N  |      M      |      ,      |      .     |      /      |  ---  |
+            //                                   | NAV(hold)   | NUM(hold)   | ENT |   | ENT | SPC/NAV     | FN(hold)    |
 
-            bindings = <
-&none  &kp Q             &kp W             &kp F               &kp P                 &kp B        &kp J      &kp L                  &kp U                &kp Y              &kp SEMICOLON      &none
-&none  &HrmL LEFT_GUI A  &HrmL LEFT_ALT R  &HrmL LEFT_SHIFT S  &HrmL LEFT_CONTROL T  &kp G        &kp M      &hrmr RIGHT_CONTROL N  &hrmr RIGHT_SHIFT E  &hrmr RIGHT_ALT I  &hrmr RIGHT_GUI O  &none
-&none  &kp Z             &kp X             &kp C               &kp D                 &kp V        &kp K      &kp H                  &kp COMMA            &kp DOT            &kp FSLH           &none
-                                           &mo 3               &mo 1                 &kp ENTER    &kp ENTER  &lt 3 SPACE            &mo 2
+            bindings = 
+        &none  &kp Q             &kp W             &kp E               &kp R                 &kp T        &kp Y      &kp U                  &kp I                &kp O              &kp P              &none
+        &none  &HrmL LEFT_GUI A  &HrmL LEFT_ALT S  &HrmL LEFT_SHIFT D  &HrmL LEFT_CONTROL F  &kp G        &kp H      &hrmr RIGHT_CONTROL J  &hrmr RIGHT_SHIFT K  &hrmr RIGHT_ALT L  &hrmr RIGHT_GUI SEMICOLON  &none
+        &none  &kp Z             &kp X             &kp C               &kp V                 &kp B        &kp N      &kp M                  &kp COMMA            &kp DOT            &kp FSLH           &none
+                                                   &mo 3               &mo 1                 &kp ENTER    &kp ENTER  &lt 3 SPACE            &mo 2
             >;
-        };
+         };
 
         Num {
             bindings = <
